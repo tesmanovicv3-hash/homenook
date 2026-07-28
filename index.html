@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Home Nook — home decor ideas</title>
+<meta name="description" content="Practical ideas, tips and inspiration for decorating your home — from small tweaks to full room makeovers.">
+
+<!-- ============================================================
+  PINTEREST INTEGRATION — site verification meta tag (Rich Pins)
+  Once you create a Pinterest Business account, go to settings
+  ("Claim website") to get your own tag. Replace the line below.
+============================================================= -->
+<meta name="p:domain_verify" content="REPLACE-WITH-YOUR-PINTEREST-CODE"/>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- ============================================================
+  GOOGLE ADSENSE — main script
+  Once AdSense approves your site, you'll get a ca-pub-XXXX ID.
+  Paste the full <script> tag they give you here instead of below.
+============================================================= -->
+<!--
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+-->
+
+<style>
+  :root{
+    --plaster: #efe9df;
+    --plaster-deep: #e4dccd;
+    --ink: #2b2620;
+    --ink-soft: #55503f;
+    --sage: #6e7b5e;
+    --sage-deep: #4f5a44;
+    --clay: #a85f35;
+    --clay-soft: #c98a5e;
+    --linen-line: #d8cfbd;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background: var(--plaster);
+    color: var(--ink);
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.6;
+  }
+  h1,h2,h3,.display{
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  a{ color: inherit; }
+  .wrap{ max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  /* ---------- Header ---------- */
+  header{
+    display:flex; align-items:center; justify-content:space-between;
+    padding: 22px 24px;
+    max-width: 1080px; margin: 0 auto;
+  }
+  .logo{
+    font-family:'Fraunces', serif; font-weight:700; font-size: 1.4rem;
+    display:flex; align-items:center; gap:8px;
+  }
+  .logo-dot{ width:10px; height:10px; border-radius:50%; background: var(--clay); display:inline-block; }
+  nav a{
+    text-decoration:none; margin-left: 26px; font-size:.95rem; color: var(--ink-soft);
+    border-bottom: 1px solid transparent; padding-bottom:2px;
+    transition: border-color .2s, color .2s;
+  }
+  nav a:hover, nav a:focus-visible{ color: var(--clay); border-color: var(--clay); }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    max-width: 1080px; margin: 0 auto;
+    padding: 40px 24px 20px;
+    display:grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items:center;
+  }
+  .hero h1{ font-size: clamp(2.1rem, 4vw, 3.2rem); line-height:1.08; }
+  .hero p.lead{ margin-top:16px; font-size:1.08rem; color: var(--ink-soft); max-width: 46ch; }
+  .hero-actions{ margin-top: 26px; display:flex; gap:14px; flex-wrap:wrap; }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding: 12px 22px; border-radius: 999px; font-weight:600; font-size:.95rem;
+    text-decoration:none; border: 1px solid transparent; cursor:pointer;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover{ transform: translateY(-1px); }
+  .btn-primary{ background: var(--ink); color: var(--plaster); }
+  .btn-primary:hover{ box-shadow: 0 6px 18px rgba(43,38,32,.25); }
+  .btn-pinterest{ background: #e60023; color:#fff; }
+  .btn-pinterest:hover{ box-shadow: 0 6px 18px rgba(230,0,35,.3); }
+
+  /* Moodboard swatch strip — signature element: paint-chip palette,
+     literal reference to choosing colors/materials for a home */
+  .swatches{ display:flex; height: 210px; border-radius: 18px; overflow:hidden; box-shadow: 0 10px 30px rgba(43,38,32,.15); }
+  .swatch{ flex:1; position:relative; display:flex; align-items:flex-end; padding:12px; }
+  .swatch span{
+    font-family:'Fraunces', serif; font-size:.72rem; color:#fff;
+    background: rgba(0,0,0,.22); padding:4px 8px; border-radius:6px;
+  }
+  .s1{ background: #4f5a44; } .s2{ background:#a85f35; }
+  .s3{ background:#c98a5e; } .s4{ background:#efe9df; }
+  .s4 span{ color:#2b2620; background: rgba(255,255,255,.55); }
+
+  /* ---------- Ad slot (AdSense placeholder) ---------- */
+  .ad-slot{
+    max-width: 1080px; margin: 34px auto; padding: 0 24px;
+  }
+  .ad-slot .box{
+    border: 1px dashed var(--linen-line); border-radius: 12px;
+    padding: 18px; text-align:center; font-size:.85rem; color: var(--ink-soft);
+    background: rgba(255,255,255,.35);
+  }
+  /* Once AdSense approves you, put your <ins class="adsbygoogle">
+     block (generated per ad unit) inside .box. */
+
+  /* ---------- Article grid ---------- */
+  section.articles{ max-width: 1080px; margin: 30px auto 10px; padding: 0 24px; }
+  .section-head{ display:flex; align-items:baseline; justify-content:space-between; margin-bottom: 22px; }
+  .section-head h2{ font-size: 1.6rem; }
+  .eyebrow{ font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; color: var(--sage-deep); font-weight:600; }
+
+  .grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .card{
+    background: #fbf9f5; border-radius: 16px; overflow:hidden;
+    border: 1px solid var(--linen-line);
+    display:flex; flex-direction:column;
+    transition: transform .2s ease, box-shadow .2s ease;
+    position:relative;
+  }
+  .card:hover{ transform: translateY(-4px); box-shadow: 0 14px 28px rgba(43,38,32,.12); }
+  .card-media{
+    height: 150px; display:flex; align-items:center; justify-content:center;
+    font-family:'Fraunces', serif; color:#fff; font-size: .8rem; letter-spacing:.05em;
+  }
+  .m1{ background: linear-gradient(135deg,#6e7b5e,#4f5a44); }
+  .m2{ background: linear-gradient(135deg,#c98a5e,#a85f35); }
+  .m3{ background: linear-gradient(135deg,#b7ab8f,#8d8265); }
+  .card-body{ padding: 18px 20px 22px; flex:1; display:flex; flex-direction:column; }
+  .card-body .tag{ font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; color: var(--clay); font-weight:600; }
+  .card-body h3{ font-size: 1.15rem; margin: 8px 0 8px; }
+  .card-body p{ font-size:.92rem; color: var(--ink-soft); flex:1; }
+  .card-footer{ display:flex; align-items:center; justify-content:space-between; margin-top:14px; }
+  .read-more{ font-size:.85rem; font-weight:600; text-decoration:none; color: var(--ink); }
+  .pin-save{
+    display:inline-flex; align-items:center; gap:6px;
+    font-size:.78rem; font-weight:600; color:#e60023; text-decoration:none;
+    border: 1px solid #f1c2c9; padding: 6px 10px; border-radius: 999px;
+    transition: background .15s;
+  }
+  .pin-save:hover{ background: #fdecef; }
+
+  /* ---------- Pinterest follow banner ---------- */
+  .pin-banner{
+    max-width: 1080px; margin: 50px auto; padding: 34px 24px;
+    background: var(--ink); color: var(--plaster);
+    border-radius: 22px; display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap;
+  }
+  .pin-banner h2{ color: var(--plaster); font-size:1.4rem; margin-bottom:6px; }
+  .pin-banner p{ color: #cfc8b7; max-width: 42ch; }
+
+  /* ---------- Footer ---------- */
+  footer{
+    max-width: 1080px; margin: 0 auto; padding: 30px 24px 50px;
+    display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;
+    color: var(--ink-soft); font-size:.85rem; border-top: 1px solid var(--linen-line); margin-top: 40px;
+  }
+
+  @media (max-width: 860px){
+    .hero{ grid-template-columns: 1fr; }
+    .grid{ grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><span class="logo-dot"></span> The Home Nook</div>
+  <nav>
+    <a href="#ideas">Ideas</a>
+    <a href="#follow">Pinterest</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <p class="eyebrow">Decor &amp; inspiration</p>
+    <h1>Small changes that transform how your home looks and feels</h1>
+    <p class="lead">Room ideas, color and material picks, and layouts that actually work — all in one place, ready to save on Pinterest.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#ideas">Browse ideas</a>
+      <a class="btn btn-pinterest" href="https://pinterest.com/YOUR-ACCOUNT" target="_blank" rel="noopener">
+        Follow us on Pinterest
+      </a>
+    </div>
+  </div>
+  <div class="swatches" aria-hidden="true">
+    <div class="swatch s1"><span>Sage</span></div>
+    <div class="swatch s2"><span>Burnt clay</span></div>
+    <div class="swatch s3"><span>Caramel wood</span></div>
+    <div class="swatch s4"><span>Plaster</span></div>
+  </div>
+</section>
+
+<!-- AD SLOT 1 (below the hero) -->
+<div class="ad-slot">
+  <div class="box">Ad slot — your Google AdSense code goes here once approved</div>
+</div>
+
+<section class="articles" id="ideas">
+  <div class="section-head">
+    <h2>Latest ideas</h2>
+  </div>
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-media m1">LIVING ROOM</div>
+      <div class="card-body">
+        <span class="tag">Color</span>
+        <h3>Sage green as your living room's base color</h3>
+        <p>How to pair muted green with wood and linen textures for a calm, warm space.</p>
+        <div class="card-footer">
+          <a class="read-more" href="#">Read more →</a>
+          <a class="pin-save" href="#" onclick="return false;">📌 Save</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-media m2">KITCHEN</div>
+      <div class="card-body">
+        <span class="tag">Small budget</span>
+        <h3>Refresh your kitchen without renovating — 7 cheap swaps</h3>
+        <p>From changing cabinet handles to open shelving — updates that don't need a contractor.</p>
+        <div class="card-footer">
+          <a class="read-more" href="#">Read more →</a>
+          <a class="pin-save" href="#" onclick="return false;">📌 Save</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-media m3">BEDROOM</div>
+      <div class="card-body">
+        <span class="tag">Layout</span>
+        <h3>Where to place the bed in a small bedroom</h3>
+        <p>Furniture layout rules that make a room feel bigger, with examples for rooms under 110 sq ft.</p>
+        <div class="card-footer">
+          <a class="read-more" href="#">Read more →</a>
+          <a class="pin-save" href="#" onclick="return false;">📌 Save</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- AD SLOT 2 (between content sections) -->
+<div class="ad-slot">
+  <div class="box">Ad slot — your Google AdSense code goes here once approved</div>
+</div>
+
+<div class="wrap" id="follow">
+  <div class="pin-banner">
+    <div>
+      <h2>Every idea shows up on Pinterest first</h2>
+      <p>Each post is shared as a pin too — follow the board and save what you like.</p>
+    </div>
+    <a class="btn btn-pinterest" href="https://pinterest.com/YOUR-ACCOUNT" target="_blank" rel="noopener">Open Pinterest →</a>
+  </div>
+</div>
+
+<footer id="about">
+  <div>© 2026 The Home Nook. Home decor ideas.</div>
+  <div>Made with love for the home.</div>
+</footer>
+
+<!-- ============================================================
+  PINTEREST "SAVE" BUTTON — official script
+  This lets visitors save YOUR IMAGES straight to their Pinterest
+  once you swap in real photos instead of the color blocks above.
+============================================================= -->
+<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+
+</body>
+</html>
